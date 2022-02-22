@@ -1,1 +1,77 @@
-{}
+{
+    "name": "Main Controls",
+    "maps": [
+        {
+            "name": "Movement",
+            "id": "5203266a-798f-4962-a9de-1cc8b44548aa",
+            "actions": [
+                {
+                    "name": "Walking",
+                    "type": "Value",
+                    "id": "2305793d-d655-4477-a6ed-987b2f63f4e8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Axis",
+                    "id": "adb29e4f-6c74-4e4b-88c9-fe44f538293f",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walking",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "9fb14c99-b59f-4bb4-aaed-6e03daf6ecda",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walking",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "8cd2076b-bf88-494d-9b8b-c0309281553b",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walking",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "76b5e1d5-8c1a-42f5-a95b-0e55a6b159f9",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walking",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "1cff3936-0c09-4a3e-b3a3-780458b130c4",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walking",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
