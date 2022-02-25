@@ -15,7 +15,12 @@ namespace TEST_ZONE
 
         public GameObject hitmark;
         
-        public void Initialize(Transform startPoint)
+        public enum BulletType
+        {
+            BasicParabolic
+        }
+        
+        public void Initialize(Transform startPoint, BulletType bulletType)
         {
             startPosition = startPoint.position;
             startForward = startPoint.forward;

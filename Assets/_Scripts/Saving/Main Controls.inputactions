@@ -2,73 +2,130 @@
     "name": "Main Controls",
     "maps": [
         {
-            "name": "Movement",
-            "id": "5203266a-798f-4962-a9de-1cc8b44548aa",
+            "name": "Default",
+            "id": "f02b184c-7227-4228-95d8-57332d9fa6f8",
             "actions": [
                 {
-                    "name": "Walking",
+                    "name": "Movement",
                     "type": "Value",
-                    "id": "2305793d-d655-4477-a6ed-987b2f63f4e8",
-                    "expectedControlType": "Vector2",
+                    "id": "5449ad5a-4004-494c-8072-9074badd6205",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MagMenu",
+                    "type": "Button",
+                    "id": "40480f2b-09c7-4d65-8284-504c5e7e03bf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "814c77ce-de4c-451d-969f-343649835675",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "HideMagMenu",
+                    "type": "Button",
+                    "id": "844d1e4b-1822-4d4f-9399-ae2a134d5a80",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
             ],
             "bindings": [
                 {
-                    "name": "Axis",
-                    "id": "adb29e4f-6c74-4e4b-88c9-fe44f538293f",
+                    "name": "Walking",
+                    "id": "dd332b4e-b167-4f52-9770-cbe9c42fe1da",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Walking",
+                    "action": "Movement",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "up",
-                    "id": "9fb14c99-b59f-4bb4-aaed-6e03daf6ecda",
-                    "path": "<Keyboard>/w",
+                    "id": "52d9a950-e0af-43b5-a434-240d753af805",
+                    "path": "*/{Forward}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Walking",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
-                    "id": "8cd2076b-bf88-494d-9b8b-c0309281553b",
-                    "path": "<Keyboard>/s",
+                    "id": "98967ba9-e274-4bf8-abd9-ea835753a6c4",
+                    "path": "*/{ScrollHorizontal}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Walking",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "76b5e1d5-8c1a-42f5-a95b-0e55a6b159f9",
-                    "path": "<Keyboard>/a",
+                    "id": "327e7ad6-75cf-4651-ada4-6ae31b2bd44b",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Walking",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "1cff3936-0c09-4a3e-b3a3-780458b130c4",
-                    "path": "<Keyboard>/d",
+                    "id": "5d483a27-6c0a-4f17-9638-0411fe3a862b",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Walking",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "58f1c221-15d4-4fb8-96fe-1476fa7024ff",
+                    "path": "<Keyboard>/r",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MagMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b9d347f-3a94-4ff3-a150-7a1d7da8a221",
+                    "path": "<Keyboard>/r",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reload",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d157c8f-51c4-421a-a94d-266db340e30c",
+                    "path": "<Keyboard>/r",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HideMagMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
