@@ -6,6 +6,7 @@
 
 Assets/External Assets/
 Assets/AssetStoreTools*
+Assets/Plugins/
 
 # Visual Studio cache directory
 .vs/
