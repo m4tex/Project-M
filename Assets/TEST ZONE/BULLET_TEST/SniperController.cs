@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TEST_ZONE;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -109,7 +108,7 @@ public class SniperController : MonoBehaviour
             newBullet.transform.parent = bulletParentTrans;
 
             //Give it speed and position
-            newBullet.GetComponent<ParabolicBullet>().Initialize(mainCamera.transform);
+            // newBullet.GetComponent<ParabolicBullet>().Initialize(mainCamera.transform);
             
             canFire = false;
         }

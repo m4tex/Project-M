@@ -1,5 +1,4 @@
 ﻿using System;
-using TEST_ZONE;
 using UnityEngine;
 
 public class MagazinesManager : MonoBehaviour

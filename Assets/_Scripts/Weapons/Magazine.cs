@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using TEST_ZONE;
 using Unity.Collections;
 
 public class Magazine
 {
     private int capacity;
     private int currentAmmo;
-    private Queue<ParabolicBullet.BulletType> bullets;
+    private Queue<ParabolicBullet.BulletType> bullets = new Queue<ParabolicBullet.BulletType>();
 
     public Magazine(int capacity, ParabolicBullet.BulletType bulletType, ParabolicBullet.BulletType[] bullets = null)
     {
